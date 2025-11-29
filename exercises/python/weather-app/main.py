@@ -29,10 +29,8 @@ def home():
 def get_weather(city):
     # Format city name and get current date to display on page
     city_name = string.capwords(city)
-    print(city_name)
     today = datetime.datetime.now()
     current_date = today.strftime("%A, %B %d")
-    print(current_date)
     # Get latitude and longitude for city
     location_params = {
         "q": city_name,
