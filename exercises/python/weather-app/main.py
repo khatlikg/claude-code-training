@@ -20,17 +20,24 @@ app = Flask(__name__)
 def home():
     if request.method == "POST":
         city = request.form.get("search")
+        print(f"User searched for city: {city}")
         return redirect(url_for("get_weather", city=city))
+    print("Rendering home page")
     return render_template("index.html")
 
 
 # Display weather forecast for specific city using data from OpenWeather API
 @app.route("/<city>", methods=["GET", "POST"])
 def get_weather(city):
+    print(f"Fetching weather data for city: {city}")
+
     # Format city name and get current date to display on page
     city_name = string.capwords(city)
+    print(f"Formatted city name: {city_name}")
+
     today = datetime.datetime.now()
     current_date = today.strftime("%A, %B %d")
+    print(f"Current date: {current_date}")
     # Get latitude and longitude for city
     location_params = {
         "q": city_name,
@@ -40,13 +47,16 @@ def get_weather(city):
 
     location_response = requests.get(GEOCODING_API_ENDPOINT, params=location_params)
     location_data = location_response.json()
+    print(f"Location API response: {len(location_data)} results found")
 
     # Prevent IndexError if user entered a city name with no coordinates by redirecting to error page
     if not location_data:
+        print(f"No coordinates found for city: {city_name}")
         return redirect(url_for("error"))
     else:
         lat = location_data[0]['lat']
         lon = location_data[0]['lon']
+        print(f"Coordinates - Lat: {lat}, Lon: {lon}")
 
     # Get OpenWeather API data
     weather_params = {
@@ -65,6 +75,7 @@ def get_weather(city):
     min_temp = round(weather_data['main']['temp_min'])
     max_temp = round(weather_data['main']['temp_max'])
     wind_speed = weather_data['wind']['speed']
+    print(f"Current weather: {current_weather}, Temp: {current_temp}°C, Min: {min_temp}°C, Max: {max_temp}°C, Wind: {wind_speed} m/s")
 
     # Get five-day weather forecast data
     forecast_response = requests.get(OWM_FORECAST_ENDPOINT, weather_params)
@@ -79,6 +90,8 @@ def get_weather(city):
     five_day_unformatted = [today, today + datetime.timedelta(days=1), today + datetime.timedelta(days=2),
                             today + datetime.timedelta(days=3), today + datetime.timedelta(days=4)]
     five_day_dates_list = [date.strftime("%a") for date in five_day_unformatted]
+    print(f"5-day forecast prepared: {len(five_day_temp_list)} days")
+    print(f"Successfully fetched all weather data for {city_name}")
 
     return render_template("city.html", city_name=city_name, current_date=current_date, current_temp=current_temp,
                            current_weather=current_weather, min_temp=min_temp, max_temp=max_temp, wind_speed=wind_speed,
