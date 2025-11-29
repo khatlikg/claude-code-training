@@ -28,6 +28,7 @@ def home():
 @app.route("/<city>", methods=["GET", "POST"])
 def get_weather(city):
     # Format city name and get current date to display on page
+    print(city)
     city_name = string.capwords(city)
     today = datetime.datetime.now()
     current_date = today.strftime("%A, %B %d")
