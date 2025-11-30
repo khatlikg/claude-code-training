@@ -18,14 +18,14 @@
                     <h2> {{ current_date }} </h2>
                 </div>
                 <div class="daily-forecast">
-                    <p id="current-temp"> {{ current_temp }}ºC </p>
+                    <p id="current-temp"> {{ current_temp }}ºC / {{ current_temp_f }}ºF </p>
                     <div class="daily-section">
                         <img class="weather-icon" src="/static/assets/{{ current_weather.lower() }}.png" alt="">
                         <p class="forecast-text"> {{ current_weather }} </p>
-                    </div>  
+                    </div>
                     <div class="daily-section">
                         <img class="weather-icon" src="/static/assets/thermometer.png" alt="">
-                        <p class="forecast-text"> {{min_temp }}° - {{ max_temp }}° </p>
+                        <p class="forecast-text"> {{min_temp }}°C / {{ min_temp_f }}°F - {{ max_temp }}°C / {{ max_temp_f }}°F </p>
                     </div> 
                     <div class="daily-section">
                         <img class="weather-icon" src="/static/assets/wind.png" alt="">
@@ -38,27 +38,27 @@
                     <div class="forecast-item">
                         <p> {{ five_day_dates_list[0] }} </p>
                         <img class="weather-icon" src="/static/assets/{{ current_weather.lower() }}.png" alt="">
-                        <p> {{ current_temp }}º </p>
+                        <p> {{ five_day_temp_list[0] }}ºC / {{ five_day_temp_list_f[0] }}ºF </p>
                     </div>
                     <div class="forecast-item">
                         <p> {{ five_day_dates_list[1] }} </p>
                         <img class="weather-icon" src="/static/assets/{{five_day_weather_list[1].lower()}}.png" alt="">
-                        <p> {{ five_day_temp_list[1] }}º </p>
+                        <p> {{ five_day_temp_list[1] }}ºC / {{ five_day_temp_list_f[1] }}ºF </p>
                     </div>
                     <div class="forecast-item">
                         <p> {{ five_day_dates_list[2] }} </p>
                         <img class="weather-icon" src="/static/assets/{{five_day_weather_list[2].lower()}}.png" alt="">
-                        <p> {{ five_day_temp_list[2] }}º </p>
+                        <p> {{ five_day_temp_list[2] }}ºC / {{ five_day_temp_list_f[2] }}ºF </p>
                     </div>
                     <div class="forecast-item">
                         <p> {{five_day_dates_list[3]}} </p>
                         <img class="weather-icon" src="/static/assets/{{five_day_weather_list[3].lower()}}.png" alt="">
-                        <p> {{ five_day_temp_list[3] }}º </p>
+                        <p> {{ five_day_temp_list[3] }}ºC / {{ five_day_temp_list_f[3] }}ºF </p>
                     </div>
                     <div class="forecast-item">
                         <p> {{five_day_dates_list[4]}} </p>
                         <img class="weather-icon" src="/static/assets/{{five_day_weather_list[4].lower()}}.png" alt="">
-                        <p> {{ five_day_temp_list[4] }}º </p>
+                        <p> {{ five_day_temp_list[4] }}ºC / {{ five_day_temp_list_f[4] }}ºF </p>
                     </div>
                 </div>
                 <div class="footer">

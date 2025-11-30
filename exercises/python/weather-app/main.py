@@ -14,6 +14,12 @@ api_key = os.getenv("OWM_API_KEY")
 app = Flask(__name__)
 
 
+# Helper function to convert Celsius to Fahrenheit
+def celsius_to_fahrenheit(celsius):
+    """Convert Celsius temperature to Fahrenheit"""
+    return round((celsius * 9/5) + 32)
+
+
 # Display home page and get city name entered into search form
 @app.route("/", methods=["GET", "POST"])
 def home():
@@ -82,16 +88,20 @@ def get_weather(city):
 
     # Extract current weather from 'current' object
     current_temp = round(onecall_data['current']['temp'])
+    current_temp_f = celsius_to_fahrenheit(current_temp)
     current_weather = onecall_data['current']['weather'][0]['main']
     wind_speed = onecall_data['current']['wind_speed']
 
     # Extract today's min/max from 'daily[0]' (today's forecast)
     min_temp = round(onecall_data['daily'][0]['temp']['min'])
+    min_temp_f = celsius_to_fahrenheit(min_temp)
     max_temp = round(onecall_data['daily'][0]['temp']['max'])
-    print(f"Current weather: {current_weather}, Temp: {current_temp}°C, Min: {min_temp}°C, Max: {max_temp}°C, Wind: {wind_speed} m/s (from One Call API 3.0)")
+    max_temp_f = celsius_to_fahrenheit(max_temp)
+    print(f"Current weather: {current_weather}, Temp: {current_temp}°C / {current_temp_f}°F, Min: {min_temp}°C / {min_temp_f}°F, Max: {max_temp}°C / {max_temp_f}°F, Wind: {wind_speed} m/s (from One Call API 3.0)")
 
     # Extract 5-day forecast from 'daily' array (indices 0-4 for 5 days)
     five_day_temp_list = [round(day['temp']['day']) for day in onecall_data['daily'][0:5]]
+    five_day_temp_list_f = [celsius_to_fahrenheit(temp) for temp in five_day_temp_list]
     five_day_weather_list = [day['weather'][0]['main'] for day in onecall_data['daily'][0:5]]
 
     # Get next four weekdays to show user alongside weather data
@@ -102,9 +112,10 @@ def get_weather(city):
     print(f"Successfully fetched all weather data for {city_name} using One Call API 3.0")
 
     return render_template("city.html", city_name=city_name, current_date=current_date, current_temp=current_temp,
-                           current_weather=current_weather, min_temp=min_temp, max_temp=max_temp, wind_speed=wind_speed,
-                           five_day_temp_list=five_day_temp_list, five_day_weather_list=five_day_weather_list,
-                           five_day_dates_list=five_day_dates_list)
+                           current_temp_f=current_temp_f, current_weather=current_weather, min_temp=min_temp,
+                           min_temp_f=min_temp_f, max_temp=max_temp, max_temp_f=max_temp_f, wind_speed=wind_speed,
+                           five_day_temp_list=five_day_temp_list, five_day_temp_list_f=five_day_temp_list_f,
+                           five_day_weather_list=five_day_weather_list, five_day_dates_list=five_day_dates_list)
 
 
 # Display error page for invalid input
