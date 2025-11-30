@@ -1,6 +1,14 @@
 # Created by https://www.toptal.com/developers/gitignore/api/flask
 # Edit at https://www.toptal.com/developers/gitignore?templates=flask
 
+### Playwright E2E Tests ###
+tests/test-results/
+tests/**/__pycache__/
+tests/**/*.pyc
+.pytest_cache/
+playwright-report/
+test-results/
+
 ### Flask ###
 instance/*
 !instance/.gitignore
