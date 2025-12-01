@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="20" failures="18" skipped="0" tests="41" time="22271.984" timestamp="2025-11-30T22:56:51.952635" hostname="Mac.attlocal.net"><testcase classname="tests.test_error_handling.TestErrorHandling" name="test_invalid_city_name[chromium]" time="30.623"><failure message="playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)">tests/test_error_handling.py:31: in test_invalid_city_name
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</failure></testcase><testcase classname="tests.test_error_handling.TestErrorHandling" name="test_special_characters_in_search[chromium]" time="30.313"><failure message="playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)">tests/test_error_handling.py:57: in test_special_characters_in_search
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</failure></testcase><testcase classname="tests.test_error_handling.TestErrorHandling" name="test_very_long_city_name[chromium]" time="30.831"><failure message="playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)">tests/test_error_handling.py:76: in test_very_long_city_name
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</failure></testcase><testcase classname="tests.test_error_handling.TestErrorHandling" name="test_error_page_exists[chromium]" time="0.417" /><testcase classname="tests.test_error_handling.TestErrorHandling" name="test_unicode_city_names[chromium]" time="30.406"><failure message="playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)">tests/test_error_handling.py:113: in test_unicode_city_names
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</failure></testcase><testcase classname="tests.test_error_handling.TestErrorHandling" name="test_whitespace_only_input[chromium]" time="30.314"><failure message="playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)">tests/test_error_handling.py:134: in test_whitespace_only_input
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</failure></testcase><testcase classname="tests.test_error_handling.TestErrorHandling" name="test_case_insensitive_search[chromium]" time="30.444"><failure message="playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)">tests/test_error_handling.py:160: in test_case_insensitive_search
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</failure></testcase><testcase classname="tests.test_error_handling.TestErrorHandling" name="test_city_without_state[chromium]" time="30.414"><failure message="playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)">tests/test_error_handling.py:183: in test_city_without_state
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</failure></testcase><testcase classname="tests.test_error_handling.TestErrorHandling" name="test_rapid_sequential_searches[chromium]" time="30.317"><failure message="playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)">tests/test_error_handling.py:203: in test_rapid_sequential_searches
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</failure></testcase><testcase classname="tests.test_error_handling.TestErrorHandling" name="test_navigation_back_button[chromium]" time="30.294"><failure message="playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)">tests/test_error_handling.py:219: in test_navigation_back_button
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</failure></testcase><testcase classname="tests.test_error_handling.TestErrorHandling" name="test_refresh_on_weather_page[chromium]" time="30.298"><failure message="playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)">tests/test_error_handling.py:241: in test_refresh_on_weather_page
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</failure></testcase><testcase classname="tests.test_forecast.TestFiveDayForecast" name="test_forecast_section_exists[chromium]" time="30.328"><error message="failed on setup with &quot;playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)&quot;">tests/test_forecast.py:25: in weather_page
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</error></testcase><testcase classname="tests.test_forecast.TestFiveDayForecast" name="test_forecast_has_five_days[chromium]" time="30.307"><error message="failed on setup with &quot;playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)&quot;">tests/test_forecast.py:25: in weather_page
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</error></testcase><testcase classname="tests.test_forecast.TestFiveDayForecast" name="test_each_forecast_day_has_date[chromium]" time="30.330"><error message="failed on setup with &quot;playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)&quot;">tests/test_forecast.py:25: in weather_page
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</error></testcase><testcase classname="tests.test_forecast.TestFiveDayForecast" name="test_each_forecast_day_has_icon[chromium]" time="30.299"><error message="failed on setup with &quot;playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)&quot;">tests/test_forecast.py:25: in weather_page
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</error></testcase><testcase classname="tests.test_forecast.TestFiveDayForecast" name="test_each_forecast_day_has_dual_temperature[chromium]" time="30.314"><error message="failed on setup with &quot;playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)&quot;">tests/test_forecast.py:25: in weather_page
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</error></testcase><testcase classname="tests.test_forecast.TestFiveDayForecast" name="test_forecast_temperature_conversion_accuracy[chromium]" time="30.310"><error message="failed on setup with &quot;playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)&quot;">tests/test_forecast.py:25: in weather_page
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</error></testcase><testcase classname="tests.test_forecast.TestFiveDayForecast" name="test_forecast_shows_different_conditions[chromium]" time="53.604"><error message="failed on setup with &quot;playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)&quot;">tests/test_forecast.py:25: in weather_page
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</error></testcase><testcase classname="tests.test_forecast.TestFiveDayForecast" name="test_forecast_days_are_sequential[chromium]" time="46.691"><error message="failed on setup with &quot;playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)&quot;">tests/test_forecast.py:25: in weather_page
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</error></testcase><testcase classname="tests.test_forecast.TestFiveDayForecast" name="test_forecast_temperatures_are_reasonable[chromium]" time="30.345"><error message="failed on setup with &quot;playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)&quot;">tests/test_forecast.py:25: in weather_page
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</error></testcase><testcase classname="tests.test_forecast.TestFiveDayForecast" name="test_forecast_divider_exists[chromium]" time="51.280"><error message="failed on setup with &quot;playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)&quot;">tests/test_forecast.py:25: in weather_page
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</error></testcase><testcase classname="tests.test_forecast.TestFiveDayForecast" name="test_forecast_loads_for_different_cities[chromium]" time="43.500"><failure message="playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.&#10;Call log:&#10;  - navigating to &quot;http://127.0.0.1:5000/&quot;, waiting until &quot;load&quot;">tests/test_forecast.py:190: in test_forecast_loads_for_different_cities
+    page_with_app.goto("http://127.0.0.1:5000/")
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:9019: in goto
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_page.py:555: in goto
+    return await self._main_frame.goto(**locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:153: in goto
+    await self._channel.send(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Page.goto: Timeout 30000ms exceeded.
+E   Call log:
+E     - navigating to "http://127.0.0.1:5000/", waiting until "load"</failure></testcase><testcase classname="tests.test_home_page.TestHomePage" name="test_home_page_loads[chromium]" time="0.829" /><testcase classname="tests.test_home_page.TestHomePage" name="test_home_page_has_search_form[chromium]" time="5.477"><failure message="AssertionError: Locator expected to be visible&#10;Actual value: hidden &#10;Call log:&#10;  - Expect &quot;to_be_visible&quot; with timeout 5000ms&#10;  - waiting for locator(&quot;form&quot;)&#10;    9 × locator resolved to &lt;form action=&quot;&quot; method=&quot;post&quot; class=&quot;search&quot; autocomplete=&quot;off&quot;&gt;…&lt;/form&gt;&#10;      - unexpected value &quot;hidden&quot;">tests/test_home_page.py:28: in test_home_page_has_search_form
+    expect(form).to_be_visible()
+E   AssertionError: Locator expected to be visible
+E   Actual value: hidden 
+E   Call log:
+E     - Expect "to_be_visible" with timeout 5000ms
+E     - waiting for locator("form")
+E       9 × locator resolved to &lt;form action="" method="post" class="search" autocomplete="off"&gt;…&lt;/form&gt;
+E         - unexpected value "hidden"</failure></testcase><testcase classname="tests.test_home_page.TestHomePage" name="test_home_page_has_search_icon[chromium]" time="5.326"><failure message="AssertionError: Locator expected to be visible&#10;Actual value: None&#10;Error: element(s) not found &#10;Call log:&#10;  - Expect &quot;to_be_visible&quot; with timeout 5000ms&#10;  - waiting for locator(&quot;img[alt=\&quot;search-icon\&quot;]&quot;)">tests/test_home_page.py:43: in test_home_page_has_search_icon
+    expect(search_icon).to_be_visible()
+E   AssertionError: Locator expected to be visible
+E   Actual value: None
+E   Error: element(s) not found 
+E   Call log:
+E     - Expect "to_be_visible" with timeout 5000ms
+E     - waiting for locator("img[alt=\"search-icon\"]")</failure></testcase><testcase classname="tests.test_home_page.TestHomePage" name="test_home_page_background_image[chromium]" time="0.364" /><testcase classname="tests.test_home_page.TestHomePage" name="test_empty_search_validation[chromium]" time="30.740"><failure message="playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)">tests/test_home_page.py:59: in test_empty_search_validation
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</failure></testcase><testcase classname="tests.test_home_page.TestHomePage" name="test_valid_city_search_navigation[chromium]" time="30.314"><failure message="playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)">tests/test_home_page.py:72: in test_valid_city_search_navigation
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</failure></testcase><testcase classname="tests.test_home_page.TestHomePage" name="test_page_responsiveness_mobile[chromium]" time="5.281"><failure message="AssertionError: Locator expected to be visible&#10;Actual value: None&#10;Error: element(s) not found &#10;Call log:&#10;  - Expect &quot;to_be_visible&quot; with timeout 5000ms&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)">tests/test_home_page.py:88: in test_page_responsiveness_mobile
+    expect(page.locator('button[type="submit"]')).to_be_visible()
+E   AssertionError: Locator expected to be visible
+E   Actual value: None
+E   Error: element(s) not found 
+E   Call log:
+E     - Expect "to_be_visible" with timeout 5000ms
+E     - waiting for locator("button[type=\"submit\"]")</failure></testcase><testcase classname="tests.test_home_page.TestHomePage" name="test_page_responsiveness_tablet[chromium]" time="5.292"><failure message="AssertionError: Locator expected to be visible&#10;Actual value: None&#10;Error: element(s) not found &#10;Call log:&#10;  - Expect &quot;to_be_visible&quot; with timeout 5000ms&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)">tests/test_home_page.py:99: in test_page_responsiveness_tablet
+    expect(page.locator('button[type="submit"]')).to_be_visible()
+E   AssertionError: Locator expected to be visible
+E   Actual value: None
+E   Error: element(s) not found 
+E   Call log:
+E     - Expect "to_be_visible" with timeout 5000ms
+E     - waiting for locator("button[type=\"submit\"]")</failure></testcase><testcase classname="tests.test_weather_display.TestWeatherDisplay" name="test_city_name_displays[chromium]" time="30.303"><error message="failed on setup with &quot;playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)&quot;">tests/test_weather_display.py:25: in weather_page
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</error></testcase><testcase classname="tests.test_weather_display.TestWeatherDisplay" name="test_current_date_displays[chromium]" time="26.286"><error message="failed on setup with &quot;playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)&quot;">tests/test_weather_display.py:25: in weather_page
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</error></testcase><testcase classname="tests.test_weather_display.TestWeatherDisplay" name="test_current_temperature_dual_format[chromium]" time="30.605"><error message="failed on setup with &quot;playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)&quot;">tests/test_weather_display.py:25: in weather_page
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</error></testcase><testcase classname="tests.test_weather_display.TestWeatherDisplay" name="test_temperature_conversion_accuracy[chromium]" time="30.302"><error message="failed on setup with &quot;playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)&quot;">tests/test_weather_display.py:25: in weather_page
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</error></testcase><testcase classname="tests.test_weather_display.TestWeatherDisplay" name="test_min_max_temperature_displays[chromium]" time="30.442"><error message="failed on setup with &quot;playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)&quot;">tests/test_weather_display.py:25: in weather_page
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</error></testcase><testcase classname="tests.test_weather_display.TestWeatherDisplay" name="test_weather_condition_displays[chromium]" time="30.282"><error message="failed on setup with &quot;playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)&quot;">tests/test_weather_display.py:25: in weather_page
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</error></testcase><testcase classname="tests.test_weather_display.TestWeatherDisplay" name="test_weather_icon_displays[chromium]" time="43.088"><error message="failed on setup with &quot;playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)&quot;">tests/test_weather_display.py:25: in weather_page
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</error></testcase><testcase classname="tests.test_weather_display.TestWeatherDisplay" name="test_wind_speed_displays[chromium]" time="30.452"><error message="failed on setup with &quot;playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)&quot;">tests/test_weather_display.py:25: in weather_page
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</error></testcase><testcase classname="tests.test_weather_display.TestWeatherDisplay" name="test_change_city_button_exists[chromium]" time="38.464"><error message="failed on setup with &quot;playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)&quot;">tests/test_weather_display.py:25: in weather_page
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</error></testcase><testcase classname="tests.test_weather_display.TestWeatherDisplay" name="test_change_city_button_navigation[chromium]" time="30.554"><error message="failed on setup with &quot;playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)&quot;">tests/test_weather_display.py:25: in weather_page
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</error></testcase><testcase classname="tests.test_weather_display.TestWeatherDisplay" name="test_multiple_cities_sequential[chromium]" time="20.389"><failure message="playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.&#10;Call log:&#10;  - waiting for locator(&quot;button[type=\&quot;submit\&quot;]&quot;)">tests/test_weather_display.py:171: in test_multiple_cities_sequential
+    submit_button.click()
+/opt/anaconda3/lib/python3.12/site-packages/playwright/sync_api/_generated.py:15573: in click
+    self._sync(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_locator.py:160: in click
+    return await self._frame.click(self._selector, strict=True, **params)
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_frame.py:549: in click
+    await self._channel.send("click", self._timeout, locals_to_params(locals()))
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:69: in send
+    return await self._connection.wrap_api_call(
+/opt/anaconda3/lib/python3.12/site-packages/playwright/_impl/_connection.py:559: in wrap_api_call
+    raise rewrite_error(error, f"{parsed_st['apiName']}: {error}") from None
+E   playwright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.
+E   Call log:
+E     - waiting for locator("button[type=\"submit\"]")</failure></testcase></testsuite></testsuites>
